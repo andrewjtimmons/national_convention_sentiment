@@ -14,10 +14,10 @@ def main(text_file):
     text = f.read()
 
   # Get sentiment for the whole file and write it out
-  # analyzed_text = anaylze_content(text)
+  analyzed_text = anaylze_content(text)
 
-  # with open('%s_fulltext_analyzed.json' % text_file[0:text_file.find('.')], 'wb') as f:
-  #   json.dump(analyzed_text, f)
+  with open('%s_fulltext_analyzed.json' % text_file[0:text_file.find('.')], 'wb') as f:
+    json.dump(analyzed_text, f)
 
   #get sentiment for individual paragraphs and write it out
   analyzed_paragraphs = []
