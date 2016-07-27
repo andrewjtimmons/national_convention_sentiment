@@ -13,6 +13,10 @@ html, body{
     display:block;
     margin:auto;
 }
+.text-row-top {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 .text-row {
   margin-bottom: 10px;
   overflow: hidden;
@@ -26,7 +30,12 @@ html, body{
 }
 .polarity, .magnitude {
   text-align: center;
+  vertical-align:middle;
+  display:table-cell;
+
 }
 #clinton-container, #trump-container {
   text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
 }
