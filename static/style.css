@@ -1,0 +1,32 @@
+html, body{
+  width:100%;
+  height:100%;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #000;
+  display: block;
+}
+.centered-img {
+    display:block;
+    margin:auto;
+}
+.text-row {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.polarity, .magnitude, .speech-text {
+  float: left;
+  padding: 2px;
+  display: inline-block;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+.polarity, .magnitude {
+  text-align: center;
+}
+#clinton-container, #trump-container {
+  text-align: left;
+}
