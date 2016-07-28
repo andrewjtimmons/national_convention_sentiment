@@ -3,7 +3,7 @@ $( document ).ready(function() {
     function setPolarityBackground(container, polarity) {
         if (polarity > 0) {
             baseColor = 150
-            maxSaturation = 55
+            maxSaturation = 100
             brightness = 55
         } else{
             baseColor = 30
@@ -15,11 +15,9 @@ $( document ).ready(function() {
     }
 
     function setMagnitudeBackground(container, magnitude) {
-        magnitudePercent = Math.abs(magnitude) * 15
+        magnitudePercent = Math.abs(magnitude) * 2
         $( container + " div:nth-last-child(1) div:nth-last-child(1)" ).css("background-color", "hsl(270, "+ magnitudePercent +"%, 55%)");
     }
-
-
 
     // Set Clinton Fulltext
     $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/trump_rnc_speech_fulltext_analyzed.json", function(json) {

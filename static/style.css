@@ -19,6 +19,12 @@ html, body{
   height: 8px;
   background: #b10117;
 }
+.polarity-gradient{
+  background: linear-gradient(to right, #1AFF8C, #8C8C8C, #FF8C1A );
+}
+.magnitude-gradient{
+  background: linear-gradient(to right, #8C8C8C, #8C1AFF );
+}
 .clinton-boarder{
   border: 3px solid #003c80;
   margin-bottom: 20px;
