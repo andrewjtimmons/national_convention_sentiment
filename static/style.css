@@ -9,9 +9,17 @@ html, body{
   color: #000;
   display: block;
 }
-.centered-img {
-    display:block;
-    margin:auto;
+.blue-bar{
+    height: 8px;
+    background: #003c80;
+}
+.white-bar{
+    height: 8px;
+    background: #f7f7f7;
+}
+.red-bar{
+    height: 8px;
+    background: #b10117;
 }
 .text-row-top {
   margin-bottom: 20px;
