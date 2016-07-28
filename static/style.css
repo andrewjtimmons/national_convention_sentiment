@@ -21,9 +21,11 @@ html, body{
 }
 .polarity-gradient{
   background: linear-gradient(to right, #1AFF8C, #8C8C8C, #FF8C1A );
+  line-height: 40px;
 }
 .magnitude-gradient{
   background: linear-gradient(to right, #8C8C8C, #8C1AFF );
+  line-height: 40px;
 }
 .clinton-boarder{
   border: 3px solid #003c80;
@@ -31,8 +33,7 @@ html, body{
 }
 .trump-boarder{
   border: 3px solid #b10117;
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 .text-row-header {
   margin-top: 40px;
@@ -40,12 +41,16 @@ html, body{
   overflow: hidden;
 }
 .text-row-subheader {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 .text-row {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.text-row-last{
+  margin-bottom: 40px;
   overflow: hidden;
 }
 .speech-text {
@@ -58,7 +63,7 @@ html, body{
   padding: 10px;
   display: inline-block;
   margin-bottom: -99999px;
-  padding-bottom: 99989px;
+  padding-bottom: 99999px;
 }
 .polarity, .magnitude {
   text-align: center;
