@@ -1,19 +1,22 @@
 $( document ).ready(function() {
 
-
     function setPolarityBackground(container, polarity) {
-        polarityPercent = Math.abs(polarity) * 100
         if (polarity > 0) {
-            baseColor = 120
+            baseColor = 150
+            maxSaturation = 55
+            brightness = 55
         } else{
-            baseColor = 0
+            baseColor = 30
+            maxSaturation = 100
+            brightness = 55
         }
-        $( container + " div:nth-last-child(1) div:nth-last-child(2)" ).css("background-color", "hsl("+baseColor+", "+ polarityPercent +"%, 50%)");
+        polarityPercent = Math.abs(polarity) * maxSaturation
+        $( container + " div:nth-last-child(1) div:nth-last-child(2)" ).css("background-color", "hsl("+baseColor+", "+ polarityPercent +"%, "+brightness+"%)");
     }
 
     function setMagnitudeBackground(container, magnitude) {
-        magnitudePercent = Math.abs(magnitude) * 25
-        $( container + " div:nth-last-child(1) div:nth-last-child(1)" ).css("background-color", "hsl(200, "+ magnitudePercent +"%, 50%)");
+        magnitudePercent = Math.abs(magnitude) * 15
+        $( container + " div:nth-last-child(1) div:nth-last-child(1)" ).css("background-color", "hsl(270, "+ magnitudePercent +"%, 55%)");
     }
 
 

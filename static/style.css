@@ -1,49 +1,68 @@
 html, body{
-  width:100%;
-  height:100%;
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Merriweather', serif;
   color: #000;
   display: block;
 }
 .blue-bar{
-    height: 8px;
-    background: #003c80;
+  height: 8px;
+  background: #003c80;
 }
 .white-bar{
-    height: 8px;
-    background: #f7f7f7;
+  height: 8px;
+  background: #f7f7f7;
 }
 .red-bar{
-    height: 8px;
-    background: #b10117;
+  height: 8px;
+  background: #b10117;
 }
-.text-row-top {
+.clinton-boarder{
+  border: 3px solid #003c80;
   margin-bottom: 20px;
+}
+.trump-boarder{
+  border: 3px solid #b10117;
+    margin-bottom: 20px;
+
+}
+.text-row-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.text-row-subheader {
+  margin-top: 40px;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 .text-row {
   margin-bottom: 10px;
   overflow: hidden;
 }
-.polarity, .magnitude, .speech-text {
+.speech-text {
   float: left;
-  padding: 2px;
+  padding: 10px;
+  display: inline-block;
+}
+.polarity, .magnitude {
+  float: left;
+  padding: 10px;
   display: inline-block;
   margin-bottom: -99999px;
-  padding-bottom: 99999px;
+  padding-bottom: 99989px;
 }
 .polarity, .magnitude {
   text-align: center;
-  vertical-align:middle;
-  display:table-cell;
+}
+.speech-content {
+  background-color: #fdfdfd;
 
 }
 #clinton-container, #trump-container {
   text-align: left;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
