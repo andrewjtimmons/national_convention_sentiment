@@ -21,14 +21,14 @@ $( document ).ready(function() {
 
     // Set Clinton Fulltext
     $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/clinton_dnc_speech_fulltext_analyzed.json", function(json) {
-        var trump_fulltext = json
-        polarity = trump_fulltext['documentSentiment']['polarity'];
-        magnitude = trump_fulltext['documentSentiment']['magnitude']
+        var clinton_fulltext = json
+        polarity = clinton_fulltext['documentSentiment']['polarity'];
+        magnitude = clinton_fulltext['documentSentiment']['magnitude']
         $('#clinton-total-sentiment').append(
             "<div class='row text-row'>"+
             "<div class='col-xs-10 speech-text'><h3>Clinton Overall Sentiment</h3></div>" +
-            "<div class='col-xs-1 polarity'>"+trump_fulltext['documentSentiment']['polarity']+"</div>"+
-            "<div class='col-xs-1 magnitude'>"+trump_fulltext['documentSentiment']['magnitude']+"</div>"+
+            "<div class='col-xs-1 polarity'>"+clinton_fulltext['documentSentiment']['polarity']+"</div>"+
+            "<div class='col-xs-1 magnitude'>"+clinton_fulltext['documentSentiment']['magnitude']+"</div>"+
             "</div>"
         )
         setPolarityBackground('#clinton-total-sentiment', polarity);
@@ -37,8 +37,8 @@ $( document ).ready(function() {
 
     // Set Clinton Paragraphs
     $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/clinton_dnc_speech_paragraphs_analyzed.json", function(json) {
-        var trump_paragraphs = json
-        trump_paragraphs.forEach(function (paragraph) {
+        var clinton_paragraphs = json
+        clinton_paragraphs.forEach(function (paragraph) {
             polarity = paragraph['analysis']['documentSentiment']['polarity']
             magnitude = paragraph['analysis']['documentSentiment']['magnitude']
             $('#clinton-paragraph-sentiment').append(
