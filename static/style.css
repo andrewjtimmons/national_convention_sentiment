@@ -20,7 +20,7 @@ html, body{
   background: #b10117;
 }
 .polarity-gradient{
-  background: linear-gradient(to right, #1AFF8C, #8C8C8C, #FF8C1A );
+  background: linear-gradient(to right, #FF8C1A, #8C8C8C, #1AFF8C);
   line-height: 40px;
 }
 .magnitude-gradient{
