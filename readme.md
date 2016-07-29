@@ -5,6 +5,7 @@ These are the files thast were used to analyze the sentiment of Hillary Clinton 
 You can use these files for your own analysis.
 
 To do that I recommend
+
 1. Do the guide here to get your api account and service account set up for using the api.  https://cloud.google.com/natural-language/docs/getting-started
 https://cloud.google.com/natural-language/docs/
 
