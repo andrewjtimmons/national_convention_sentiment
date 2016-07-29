@@ -4,7 +4,7 @@ These are the files thast were used to analyze the sentiment of Hillary Clinton 
 
 You can use these files for your own analysis.
 
-To do that I recommend
+To do that I recommend the following
 
 1. Do the guide here to get your api account and service account set up for using the api.  https://cloud.google.com/natural-language/docs/getting-started
 https://cloud.google.com/natural-language/docs/
@@ -22,3 +22,4 @@ http://www.politico.com/story/2016/07/full-text-hillary-clintons-dnc-speech-2264
 Trump speech accessed on 7/26/16 from here:
 http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974
 
+No rights reserved, do whatever you want these.  Attribution appriciated.

@@ -20,7 +20,7 @@ $( document ).ready(function() {
     }
 
     // Set Clinton Fulltext
-    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/trump_rnc_speech_fulltext_analyzed.json", function(json) {
+    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/clinton_dnc_speech_fulltext_analyzed.json", function(json) {
         var trump_fulltext = json
         polarity = trump_fulltext['documentSentiment']['polarity'];
         magnitude = trump_fulltext['documentSentiment']['magnitude']
@@ -36,7 +36,7 @@ $( document ).ready(function() {
     });
 
     // Set Clinton Paragraphs
-    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/trump_rnc_speech_paragraphs_analyzed.json", function(json) {
+    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/clinton_dnc_speech_paragraphs_analyzed.json", function(json) {
         var trump_paragraphs = json
         trump_paragraphs.forEach(function (paragraph) {
             polarity = paragraph['analysis']['documentSentiment']['polarity']
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     });
 
     // Set Trump Fulltext
-    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/trump_rnc_speech_fulltext_analyzed.json", function(json) {
+    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/trump_rnc_speech_fulltext_analyzed.json", function(json) {
         var trump_fulltext = json
         polarity = trump_fulltext['documentSentiment']['polarity'];
         magnitude = trump_fulltext['documentSentiment']['magnitude']
@@ -70,7 +70,7 @@ $( document ).ready(function() {
     });
 
     // Set Trump Paragraphs
-    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/trump_rnc_speech_paragraphs_analyzed.json", function(json) {
+    $.getJSON("https://raw.githubusercontent.com/andrewjtimmons/national_convention_sentiment/master/static/trump_rnc_speech_paragraphs_analyzed.json", function(json) {
         trump_paragraphs = json
         trump_paragraphs.forEach(function (paragraph) {
             polarity = paragraph['analysis']['documentSentiment']['polarity']
